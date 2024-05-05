@@ -31,3 +31,9 @@ To get started with the project, follow these steps:
 ## Usage
 
 To run the project notebook or scripts individually.
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
