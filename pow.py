@@ -23,6 +23,9 @@ class Blockchain:
         self.target_time_interval = 15  # Target time interval between blocks in seconds
         self.block_count_since_adjustment = 0
         self.total_time_since_adjustment = 0
+        # Create genesis block (initial block)
+        genesis_block = Block(0, "0", "Genesis", time.time())
+        self.add_block(genesis_block)
 
     def add_block(self, new_block):
         if len(self.chain) > 0:
@@ -70,16 +73,15 @@ class Blockchain:
         self.block_count_since_adjustment = 0
         self.total_time_since_adjustment = 0
 
-# Example usage
-blockchain = Blockchain()
 
-# Create genesis block (initial block)
-genesis_block = Block(0, "0", "Genesis", time.time())
-blockchain.add_block(genesis_block)
+if __name__ == "__main__":
+    # Example usage
+    blockchain = Blockchain()
 
-# Create and add more blocks
-for i in range(1, 100):
-    print("\n---------Adding block #", i, "---------")
-    new_block = Block(i, "", "Transaction data " + str(i), time.time())
-    blockchain.add_block(new_block)
-    print("Block #", i, " added to the blockchain", blockchain.chain[-1])
+
+    # Create and add more blocks
+    for i in range(1, 100):
+        print("\n---------Adding block #", i, "---------")
+        new_block = Block(i, "", "Transaction data " + str(i), time.time())
+        blockchain.add_block(new_block)
+        print("Block #", i, " added to the blockchain", blockchain.chain[-1])
