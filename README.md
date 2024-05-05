@@ -17,19 +17,17 @@ In this project, will be implementing part a blockchain protocol as part of the 
 
 ## Features
 
-- [ ] Block creation and validation
-- [ ] Transaction management
-- [ ] Consensus mechanism
-- [ ] Mining and proof-of-work
-- [ ] Peer-to-peer network communication
+- [ X ] Block creation and validation
+- [ X ] Mining and proof-of-work
+- [ X ] Merkle trees
 
 ## Installation
 
 To get started with the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/blockchain-protocol.git`
+1. Clone the repository: `git clone https://github.com/0xjrr/blockchain-protocol.git`
 2. Install the required dependencies: 
 
 ## Usage
 
-To run the project, use the following command:
+To run the project notebook or scripts individually.
